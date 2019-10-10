@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public class ReadExcel {
+public class ReadExcelUpdate {
 
 
     //表明
@@ -25,7 +25,7 @@ public class ReadExcel {
     private static final Integer COL = 10;
 
     public static void main(String[] args) {
-        ReadExcel obj = new ReadExcel();
+        ReadExcelUpdate obj = new ReadExcelUpdate();
         // 此处为我创建Excel路径：E:/zhanhj/studysrc/jxl下
         File file = new File("D:/111.xls");
         List excelList = obj.readExcel(file);
