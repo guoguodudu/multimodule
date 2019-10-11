@@ -18,7 +18,7 @@ public class ReadExcelUpdate {
     //分割符
     private static final Integer FENGE = 11;
 
-    //判断字符串大小
+    //判断字符串大小是否添加双引号
     private static final Integer FENGESIZE = 6;
 
 
@@ -27,7 +27,7 @@ public class ReadExcelUpdate {
     public static void main(String[] args) {
         ReadExcelUpdate obj = new ReadExcelUpdate();
         // 此处为我创建Excel路径：E:/zhanhj/studysrc/jxl下
-        File file = new File("D:/111.xls");
+        File file = new File("D:/update.xls");
         List excelList = obj.readExcel(file);
         System.out.println("list中的数据打印出来");
 
@@ -76,7 +76,7 @@ public class ReadExcelUpdate {
                 } else {
                     stringBuffer.append(list.get(j));
                 }
-                stringBuffer.append(" and ");
+                stringBuffer.append(" AND ");
             }
 
             stringBuffer.delete(stringBuffer.length() - 4,stringBuffer.length());

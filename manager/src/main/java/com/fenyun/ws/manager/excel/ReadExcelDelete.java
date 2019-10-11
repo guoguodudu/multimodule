@@ -15,9 +15,9 @@ public class ReadExcelDelete {
     private static final String TABLENAME = "bo_pd";
 
     //分割符
-    private static final Integer FENGE = 11;
+  //  private static final Integer FENGE = 11;
 
-    //判断字符串大小
+    //判断字符串大小是否添加双引号
     private static final Integer FENGESIZE = 6;
 
 
@@ -26,7 +26,7 @@ public class ReadExcelDelete {
     public static void main(String[] args) {
         ReadExcelUpdate obj = new ReadExcelUpdate();
         // 此处为我创建Excel路径：E:/zhanhj/studysrc/jxl下
-        File file = new File("D:/111.xls");
+        File file = new File("D:/delete.xls");
         List excelList = obj.readExcel(file);
         System.out.println("list中的数据打印出来");
 
@@ -34,31 +34,13 @@ public class ReadExcelDelete {
         for (int i = 1; i < excelList.size(); i++) {
 
             StringBuffer stringBuffer = new StringBuffer();
-            stringBuffer.append("UPDATE ").append(TABLENAME).append(" SET ");
+            stringBuffer.append("DELETE FROM ").append(TABLENAME).append("");
 
             List list = (List) excelList.get(i);
-            for (int j = 0; j < FENGE; j++) {
-                stringBuffer.append(((List) excelList.get(0)).get(j));
-                stringBuffer.append(" = ");
-                //stringBuffer.append(list.get(j));
-                String string = list.get(j).toString();
-                Pattern pattern = Pattern.compile("^-?\\d+(\\.\\d+)?$");
-                if (!pattern.matcher(string).matches() && !"NULL".equals(string)) {
-                    stringBuffer.append("'");
-                    stringBuffer.append(list.get(j));
-                    stringBuffer.append("'");
-                } else if (string.length() >= FENGESIZE) {
-                    stringBuffer.append("'");
-                    stringBuffer.append(list.get(j));
-                    stringBuffer.append("'");
-                } else {
-                    stringBuffer.append(list.get(j));
-                }
-                stringBuffer.append(", ");
-            }
-            stringBuffer.delete(stringBuffer.length() - 2,stringBuffer.length());
+
+           // stringBuffer.delete(stringBuffer.length() - 2,stringBuffer.length());
             stringBuffer.append(" WHERE ");
-            for (int j = FENGE + 1; j < list.size(); j++) {
+            for (int j = 0; j < list.size(); j++) {
                 stringBuffer.append(((List) excelList.get(0)).get(j));
                 stringBuffer.append(" = ");
                 //stringBuffer.append(list.get(j));
@@ -75,7 +57,7 @@ public class ReadExcelDelete {
                 } else {
                     stringBuffer.append(list.get(j));
                 }
-                stringBuffer.append(" and ");
+                stringBuffer.append(" AND ");
             }
 
             stringBuffer.delete(stringBuffer.length() - 4,stringBuffer.length());
