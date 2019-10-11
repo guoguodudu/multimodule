@@ -11,8 +11,15 @@ import java.util.regex.Pattern;
 
 public class ReadExcelDelete {
 
+
+    /*
+     * PD档对应 BO_PD
+     * SUB档 BO_PD_SUB
+     *
+     * */
+
     //表明
-    private static final String TABLENAME = "bo_pd";
+    private static final String TABLENAME = "BO_PD_SUB";
 
     //分割符
   //  private static final Integer FENGE = 11;
@@ -60,7 +67,7 @@ public class ReadExcelDelete {
                 stringBuffer.append(" AND ");
             }
 
-            stringBuffer.delete(stringBuffer.length() - 4,stringBuffer.length());
+            stringBuffer.delete(stringBuffer.length() - 5,stringBuffer.length());
             stringBuffer.append(";");
             System.out.println(stringBuffer);
         }

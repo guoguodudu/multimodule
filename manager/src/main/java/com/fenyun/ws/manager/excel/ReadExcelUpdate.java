@@ -12,11 +12,17 @@ import java.util.regex.Pattern;
 public class ReadExcelUpdate {
 
 
-    //表明
-    private static final String TABLENAME = "bo_pd";
+
+    /*
+    * PD档对应 BO_PD
+    * SUB档 BO_PD_SUB
+    *  RC_PD
+    * */
+
+    private static final String TABLENAME = "BO_PD";
 
     //分割符
-    private static final Integer FENGE = 11;
+    private static final Integer FENGE = 4;
 
     //判断字符串大小是否添加双引号
     private static final Integer FENGESIZE = 6;
@@ -46,20 +52,20 @@ public class ReadExcelUpdate {
                 Pattern pattern = Pattern.compile("^-?\\d+(\\.\\d+)?$");
                 if (!pattern.matcher(string).matches() && !"NULL".equals(string)) {
                     stringBuffer.append("'");
-                    stringBuffer.append(list.get(j));
+                    stringBuffer.append(string);
                     stringBuffer.append("'");
                 } else if (string.length() >= FENGESIZE) {
                     stringBuffer.append("'");
-                    stringBuffer.append(list.get(j));
+                    stringBuffer.append(string);
                     stringBuffer.append("'");
                 } else {
-                    stringBuffer.append(list.get(j));
+                    stringBuffer.append(string);
                 }
                 stringBuffer.append(", ");
             }
             stringBuffer.delete(stringBuffer.length() - 2,stringBuffer.length());
             stringBuffer.append(" WHERE ");
-            for (int j = FENGE + 1; j < list.size(); j++) {
+            for (int j = FENGE ; j < list.size(); j++) {
                 stringBuffer.append(((List) excelList.get(0)).get(j));
                 stringBuffer.append(" = ");
                 //stringBuffer.append(list.get(j));
@@ -79,7 +85,7 @@ public class ReadExcelUpdate {
                 stringBuffer.append(" AND ");
             }
 
-            stringBuffer.delete(stringBuffer.length() - 4,stringBuffer.length());
+            stringBuffer.delete(stringBuffer.length() - 5,stringBuffer.length());
             stringBuffer.append(";");
             System.out.println(stringBuffer);
         }
