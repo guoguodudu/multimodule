@@ -19,7 +19,7 @@ public class ReadExcelUpdate {
     *  RC_PD
     * */
 
-    private static final String TABLENAME = "BO_PD";
+    private static final String TABLENAME = "RC_PD";
 
     //分割符
     private static final Integer FENGE = 4;
@@ -44,7 +44,7 @@ public class ReadExcelUpdate {
             stringBuffer.append("UPDATE ").append(TABLENAME).append(" SET ");
 
             List list = (List) excelList.get(i);
-            for (int j = 0; j < FENGE; j++) {
+            for (int j = FENGE ; j < list.size(); j++) {
                 stringBuffer.append(((List) excelList.get(0)).get(j));
                 stringBuffer.append(" = ");
                 //stringBuffer.append(list.get(j));
@@ -65,7 +65,7 @@ public class ReadExcelUpdate {
             }
             stringBuffer.delete(stringBuffer.length() - 2,stringBuffer.length());
             stringBuffer.append(" WHERE ");
-            for (int j = FENGE ; j < list.size(); j++) {
+            for (int j = 0; j < FENGE; j++) {
                 stringBuffer.append(((List) excelList.get(0)).get(j));
                 stringBuffer.append(" = ");
                 //stringBuffer.append(list.get(j));

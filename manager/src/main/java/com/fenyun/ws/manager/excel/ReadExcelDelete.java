@@ -15,11 +15,11 @@ public class ReadExcelDelete {
     /*
      * PD档对应 BO_PD
      * SUB档 BO_PD_SUB
-     *
+     *  RC_PD_SUB
      * */
 
     //表明
-    private static final String TABLENAME = "BO_PD_SUB";
+    private static final String TABLENAME = "RC_PD_SUB";
 
     //分割符
   //  private static final Integer FENGE = 11;
