@@ -22,6 +22,16 @@ public class UserController extends BaseController {
     @Autowired
     private IUserService iUserService;
 
+    @RequestMapping(value = "/list",method =RequestMethod.POST )
+    public RestResponse getString(){
+        return successResponse("13rerterteter");
+    }
+
+    @RequestMapping(value = "/list2" )
+    public RestResponse getSgtring(){
+        return successResponse("123");
+    }
+
     @RequestMapping("/add")
     public RestResponse UserTest() {
         User user = new User();
