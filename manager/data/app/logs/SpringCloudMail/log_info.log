@@ -144,3 +144,11 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4
 ===2019-09-29 13:55:36.931 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 12.323 seconds (JVM running for 18.931)
 ===2019-10-10 17:12:30.504 INFO  com.fenyun.ws.manager.ManagerApplicationTests Line:652 - The following profiles are active: dev
 ===2019-10-10 17:12:55.095 INFO  com.fenyun.ws.manager.ManagerApplicationTests Line:59  - Started ManagerApplicationTests in 34.29 seconds (JVM running for 35.491)
+===2019-10-13 18:22:34.275 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2019-10-13 18:22:36.993 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2019-10-13 18:22:37.004 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2019-10-13 18:22:37.004 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2019-10-13 18:22:37.153 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2019-10-13 18:22:39.688 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2019-10-13 18:22:39.733 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 9.422 seconds (JVM running for 21.186)
+===2019-10-13 18:23:00.737 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
