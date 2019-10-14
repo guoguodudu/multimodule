@@ -24,7 +24,7 @@ public class UserController extends BaseController {
 
     @RequestMapping(value = "/list",method =RequestMethod.POST )
     public RestResponse getString(){
-        return successResponse("dupihua");
+        return successResponse("sdkfhsdj");
     }
 
     @RequestMapping(value = "/list2" )

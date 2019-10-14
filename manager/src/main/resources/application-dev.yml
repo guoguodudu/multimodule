@@ -1,7 +1,12 @@
 
+logging:
+  level:
+    root: warn
+    com.fenyun.ws.manager.mapper: trace
+
 spring:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/sys?useSSL=false&allowMultiQueries=true
+    url: jdbc:mysql://127.0.0.1:3306/sys_user?useSSL=false&allowMultiQueries=true
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver

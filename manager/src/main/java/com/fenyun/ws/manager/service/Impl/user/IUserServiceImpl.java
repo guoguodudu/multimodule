@@ -26,7 +26,7 @@ public class IUserServiceImpl implements IUserService {
     public int insertUser(User user) {
         log.info("method=insertUser,user=【{}】",user);
 
-        System.out.println(roleMapper.findByUserRole(1L));
+        System.out.println(userMapper.findByUserName("123"));
 
         System.out.println(roleMapper.selectAll());
 
