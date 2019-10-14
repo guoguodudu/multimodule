@@ -1,7 +1,7 @@
 
 logging:
   level:
-    root: warn
+    root: info
     com.fenyun.ws.manager.mapper: trace
 
 spring:
