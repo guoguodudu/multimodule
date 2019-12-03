@@ -4,10 +4,13 @@ import com.fenyun.ws.manager.domain.user.User;
 import com.fenyun.ws.manager.mapper.user.RoleMapper;
 import com.fenyun.ws.manager.mapper.user.UserMapper;
 import com.fenyun.ws.manager.service.user.IUserService;
+import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
+
+import java.util.List;
 
 @Slf4j
 @Service
@@ -24,6 +27,8 @@ public class IUserServiceImpl implements IUserService {
 
     @Override
     public int insertUser(User user) {
+
+        List list= Lists.newArrayList();
         log.info("method=insertUser,user=【{}】",user);
 
         System.out.println(userMapper.findByUserName("123"));

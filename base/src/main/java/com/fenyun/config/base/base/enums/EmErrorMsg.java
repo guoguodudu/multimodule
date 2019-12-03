@@ -4,15 +4,17 @@ public enum EmErrorMsg {
 
     FAIL("系统异常", Integer.valueOf(0)),
     SUCCESS("返回成功", Integer.valueOf(1)),
-    SUCCESSUPDATE("更新成功", Integer.valueOf(2)),
-    SUCCESSINSERT("插入成功", Integer.valueOf(3)),
-    SUCCESSDELETE("删除成功", Integer.valueOf(4)),
-    SUCCESSLOGIN("登录成功", Integer.valueOf(5)),
-    SUCCESSLOGOUT("退出登录成功", Integer.valueOf(6)),
+    SUCCESSSLECT("查询成功", Integer.valueOf(2)),
+    SUCCESSUPDATE("更新成功", Integer.valueOf(3)),
+    SUCCESSINSERT("插入成功", Integer.valueOf(4)),
+    SUCCESSDELETE("删除成功", Integer.valueOf(5)),
+    SUCCESSLOGIN("登录成功", Integer.valueOf(6)),
+    SUCCESSLOGOUT("退出登录成功", Integer.valueOf(7)),
 
-    FAILUPDATE("更新失败", Integer.valueOf(102)),
-    FAILINSERT("插入失败", Integer.valueOf(103)),
-    FAILDELETE("删除失败", Integer.valueOf(104)),
+    FAILSLECT("查询失败", Integer.valueOf(102)),
+    FAILUPDATE("更新失败", Integer.valueOf(103)),
+    FAILINSERT("插入失败", Integer.valueOf(104)),
+    FAILDELETE("删除失败", Integer.valueOf(105)),
 
 
     FAILDATABASE("数据库异常", Integer.valueOf(200)),

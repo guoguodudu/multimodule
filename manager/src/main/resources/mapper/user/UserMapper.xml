@@ -16,6 +16,18 @@
     <result column="is_delete" property="isDelete" jdbcType="BIT" />
   </resultMap>
 
+  <resultMap id="getMap" type="Map">
+      <result column="code" property="key" />
+      <result column="number" property="value"/>
+  </resultMap>
+
+  <select id="getMapMax" resultMap="getMap" >
+    select
+    name,MAX(state)
+    from sys_user ur
+    GROUP BY name
+  </select>
+
   <select id="findByUserName" resultMap="BaseResultMap" >
     select
     *

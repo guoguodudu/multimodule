@@ -16,7 +16,7 @@ public class readExcelDemo {
 
 
     //判断字符串大小是否添加双引号
-    private static final Integer FENGESIZE = 6;
+    private static final Integer FENGESIZE = 7;
 
     public static void main(String[] args) {
         ReadExcelUpdate obj = new ReadExcelUpdate();
@@ -116,11 +116,7 @@ public class readExcelDemo {
                 stringBuffer.append("'");
                 stringBuffer.append(string);
                 stringBuffer.append("'");
-            } else if (string.length() >= FENGESIZE) {
-                stringBuffer.append("'");
-                stringBuffer.append(string);
-                stringBuffer.append("'");
-            } else {
+            }  else {
                 stringBuffer.append(string);
             }
             stringBuffer.append(", ");

@@ -84,7 +84,6 @@ public class ReadExcelUpdate {
                 }
                 stringBuffer.append(" AND ");
             }
-
             stringBuffer.delete(stringBuffer.length() - 5,stringBuffer.length());
             stringBuffer.append(";");
             System.out.println(stringBuffer);

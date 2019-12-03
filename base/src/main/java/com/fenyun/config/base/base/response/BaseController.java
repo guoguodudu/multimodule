@@ -26,6 +26,16 @@ public abstract class BaseController {
         return restResponse;
     }
 
+    protected RestResponse selectResponse(Object obj) {
+        RestResponse restResponse = new RestResponse();
+        restResponse.setResult(EmErrorMsg.SUCCESS.getIndex());
+        restResponse.setRetCode(EmErrorMsg.SUCCESSSLECT.getIndex());
+        restResponse.setRetMsg(EmErrorMsg.SUCCESSSLECT.getName());
+        restResponse.setRetDateTime(LocalDateTime.now());
+        restResponse.setRetObj(obj);
+        return restResponse;
+    }
+
     protected RestResponse updateResponse(int result) {
         if (result > 0) {
             RestResponse restResponse = new RestResponse();
