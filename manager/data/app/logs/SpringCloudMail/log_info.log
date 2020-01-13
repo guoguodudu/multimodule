@@ -1,24 +1,42 @@
-===2019-12-03 16:24:26.570 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
-===2019-12-03 16:24:32.067 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
-===2019-12-03 16:24:32.083 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
-===2019-12-03 16:24:32.083 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
-===2019-12-03 16:24:32.347 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
-===2019-12-03 16:24:37.096 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
-===2019-12-03 16:24:37.165 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 17.859 seconds (JVM running for 32.885)
-===2019-12-03 16:25:27.523 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-===2019-12-03 17:28:40.065 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
-===2019-12-03 17:28:44.107 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
-===2019-12-03 17:28:44.122 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
-===2019-12-03 17:28:44.123 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
-===2019-12-03 17:28:44.323 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
-===2019-12-03 17:28:48.460 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
-===2019-12-03 17:28:48.528 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 14.682 seconds (JVM running for 22.935)
-===2019-12-03 17:29:01.219 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-===2019-12-03 17:35:47.188 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
-===2019-12-03 17:35:51.603 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
-===2019-12-03 17:35:51.619 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
-===2019-12-03 17:35:51.619 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
-===2019-12-03 17:35:51.811 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
-===2019-12-03 17:35:56.526 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
-===2019-12-03 17:35:56.596 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 15.909 seconds (JVM running for 26.69)
-===2019-12-03 17:36:00.503 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-01-02 13:49:56.896 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2020-01-02 13:50:14.618 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 24.328 seconds (JVM running for 26.486)
+===2020-01-02 13:50:15.001 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+===2020-01-02 13:50:48.679 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2020-01-02 13:50:55.280 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 13.728 seconds (JVM running for 14.723)
+===2020-01-02 13:50:55.521 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+===2020-01-02 13:51:55.466 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2020-01-02 13:52:02.289 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 13.353 seconds (JVM running for 14.4)
+===2020-01-02 13:52:02.572 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+===2020-01-02 13:52:02.761 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+===2020-01-02 13:52:02.884 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+===2020-01-02 13:52:02.894 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
+===2020-01-02 13:52:35.546 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2020-01-02 13:52:41.945 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 13.117 seconds (JVM running for 14.134)
+===2020-01-02 13:52:42.214 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+===2020-01-02 13:52:42.354 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+===2020-01-02 13:52:42.620 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+===2020-01-02 13:52:42.630 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
+===2020-01-02 13:53:27.132 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2020-01-02 13:53:33.468 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 12.919 seconds (JVM running for 13.964)
+===2020-01-02 13:53:33.761 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+===2020-01-02 13:53:33.948 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+===2020-01-02 13:53:34.056 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+===2020-01-02 13:53:34.060 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
+===2020-01-02 13:54:19.034 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2020-01-02 13:54:25.297 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 12.854 seconds (JVM running for 13.905)
+===2020-01-02 13:54:25.584 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+===2020-01-02 13:54:25.753 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+===2020-01-02 13:54:25.857 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+===2020-01-02 13:54:25.999 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
+===2020-01-02 13:54:51.654 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2020-01-02 13:54:57.946 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 12.801 seconds (JVM running for 13.802)
+===2020-01-02 13:54:58.216 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+===2020-01-02 13:54:58.394 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+===2020-01-02 13:54:58.503 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+===2020-01-02 13:54:58.508 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
+===2020-01-02 13:55:27.009 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2020-01-02 13:55:33.339 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 12.974 seconds (JVM running for 13.998)
+===2020-01-02 13:55:33.617 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+===2020-01-02 13:55:33.785 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+===2020-01-02 13:55:34.061 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+===2020-01-02 13:55:34.069 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.

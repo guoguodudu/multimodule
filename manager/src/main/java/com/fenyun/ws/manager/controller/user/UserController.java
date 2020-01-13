@@ -22,9 +22,15 @@ public class UserController extends BaseController {
     @Autowired
     private IUserService iUserService;
 
-    @RequestMapping(value = "/list",method =RequestMethod.POST )
-    public RestResponse getString(){
-        return selectResponse("sdkfhsdj");
+    @RequestMapping(value = "/test",method =RequestMethod.POST )
+    public RestResponse getString(@RequestBody String mobile){
+        System.out.println("string"+mobile);
+        try {
+            Thread.sleep(1000*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return successResponse("sdkfhsdj");
     }
 
     @RequestMapping(value = "/list2" )

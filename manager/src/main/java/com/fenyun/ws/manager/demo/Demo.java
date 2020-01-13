@@ -9,6 +9,8 @@ public class Demo {
 
     /**
      * authenticationSubmitTime : 1546938963000
+     *
+     *
      * bankCard : “”
      * company : {"auditFailReason":"","auditorTime":"2019-01-08 17:15:05.0","companyName":"xxx","hasagent":"0","legal":"","legalName":"xxx","organization":"xxx","organizationPath":"xxx","regFormPath":"xxx","relatedTransactionNo":"xxx","status":"4","verifyType":"1"}
      * manager : {"auditFailReason":"","auditorTime":"","headPhotoPath":"xxx","idCard":"xxx","mobile":"xxx","personName":"xxx","status":"2","type":"1","verifyType":"0"}
