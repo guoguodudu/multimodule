@@ -304,7 +304,7 @@ public class DatabaseUtil {
         List<String> strings= Arrays.asList("id","ID");
         System.out.println("--------------------------------");
 
-        sendHtml("SETTLE_MANAGE",strings);
+        sendHtml("DEPOSIT_MA",strings);
         System.out.println("--------------------------------");
     }
 

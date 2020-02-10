@@ -36,7 +36,6 @@ public class HeaderFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
         HttpServletRequest reqs = (HttpServletRequest) servletRequest;
-
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Access-Control-Allow-Origin*",reqs.getHeader("Origin"));
         response.setHeader("Access-Control-Allow-Credentials", "true");
