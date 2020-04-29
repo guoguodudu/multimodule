@@ -3,6 +3,9 @@ package com.fenyun.config.base.base;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author mapper
+ */
 @SpringBootApplication
 public class BaseApplication {
 

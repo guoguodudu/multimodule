@@ -5,6 +5,9 @@ import lombok.Data;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+/**
+ * @author mapper
+ */
 @Data
 public class RestResponse implements Serializable {
     private Integer result;

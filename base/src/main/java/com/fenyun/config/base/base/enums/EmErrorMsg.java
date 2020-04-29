@@ -1,7 +1,15 @@
 package com.fenyun.config.base.base.enums;
 
+/**
+ * @author mapper
+ */
 public enum EmErrorMsg {
 
+
+
+    /**
+     * 系统异常
+     */
     FAIL("系统异常", Integer.valueOf(0)),
     SUCCESS("返回成功", Integer.valueOf(1)),
     SUCCESSSLECT("查询成功", Integer.valueOf(2)),
@@ -27,6 +35,7 @@ public enum EmErrorMsg {
     FAILNOTLOGINNAME("用户名重复", Integer.valueOf(105)),
     FAILNOTLOGINNAMELOCK("用户名重复", Integer.valueOf(105)),
     FAILLOGINNAMENOTEXEIT("用户名不存在", Integer.valueOf(102));
+
 
     private String name;
 

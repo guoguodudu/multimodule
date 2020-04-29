@@ -3,6 +3,9 @@ package com.fenyun.config.base.base.exception;
 import com.fenyun.config.base.base.enums.EmErrorMsg;
 import lombok.Data;
 
+/**
+ * @author mapper
+ */
 @Data
 public class ServiceException extends RuntimeException{
 

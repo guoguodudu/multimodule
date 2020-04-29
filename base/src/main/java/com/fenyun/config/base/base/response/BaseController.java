@@ -5,6 +5,9 @@ import com.fenyun.config.base.base.enums.EmErrorMsg;
 
 import java.time.LocalDateTime;
 
+/**
+ * @author mapper
+ */
 public abstract class BaseController {
 
     protected RestResponse successResponse() {
