@@ -11,7 +11,7 @@ public class UpdatePassword {
     public static void main(String[] args) {
 
         String userName="EF863";
-        String password="123";
+        String password="1234";
 
         String pwd = new SimpleHash(
                 HASH_ALGORITHM_NAME,
