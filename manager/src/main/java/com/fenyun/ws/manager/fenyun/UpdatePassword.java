@@ -8,6 +8,9 @@ public class UpdatePassword {
 
     public final static String HASH_ALGORITHM_NAME = "MD5"; 	//shiro加密算法
     public final static int HASH_ITERATIONS = 2;
+
+    int kk;
+
     public static void main(String[] args) {
 
         String userName="EF863";
