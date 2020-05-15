@@ -7,6 +7,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+/**
+ * @author mapper
+ */
 @Slf4j
 public abstract class BaseExceptionAdvice extends BaseController {
 

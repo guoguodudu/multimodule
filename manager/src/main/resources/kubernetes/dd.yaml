@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: $SERVER_NAME"-deployment"  #???????
+  namespace: cf
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: $SERVER_NAME
+      environment: test
+  template:
+    metadata:
+      name: $SERVER_NAME"-pod"
+      labels:
+        app: $SERVER_NAME
+        environment: test
+    spec:
+      containers:
+        - name: $SERVER_NAME"container"  #?????????
+          image: $HARBOR_REPO/$SERVER_NAME:$DATE  #???????
+          ports:
+            - name: http
+              containerPort: $E_PORT
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: $SERVER_NAME
+  namespace: cf
+spec:
+  type: NodePort
+  selector:
+    app: $SERVER_NAME
+    environment: test
+  ports:
+    - port: $E_PORT     #service ?????
+      targetPort: $APP_PORT   #????????
