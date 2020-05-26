@@ -56,10 +56,11 @@ public class IUserServiceImplTest {
                     System.out.println(Thread.currentThread().getName() + "----" + userlists.size());
                 for (final User user:userlists
                      ) {
+                    user.setEmail("22222222");
                     updateUser1(user);
                     System.out.println(Thread.currentThread().getName() + "----" +user);
                 }
-             //   updateUser(userlists.stream().map(User::getId).collect(Collectors.toList()));
+               updateUser(userlists.stream().map(User::getId).collect(Collectors.toList()));
                // System.out.println(userlists.stream().map(User::getId).collect(Collectors.toList()));
 
 
