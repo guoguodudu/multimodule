@@ -66,7 +66,7 @@ public class IUserServiceImplTest {
 
             });
         }
-        executorService.shutdown();
+        //executorService.shutdown();
 
     }
 

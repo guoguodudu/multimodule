@@ -369,3 +369,9 @@
 ===2020-05-26 22:29:16.227 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
 ===2020-05-26 22:29:16.835 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
 ===2020-05-26 22:29:16.839 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
+===2020-05-26 22:30:55.903 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2020-05-26 22:30:58.963 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 6.135 seconds (JVM running for 6.82)
+===2020-05-26 22:30:59.128 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+===2020-05-26 22:30:59.251 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+===2020-05-26 22:30:59.838 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+===2020-05-26 22:30:59.843 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
