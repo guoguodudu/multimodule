@@ -5,7 +5,6 @@ import com.fenyun.ws.manager.domain.user.User;
 import com.fenyun.ws.manager.mapper.StudentMapper;
 import com.fenyun.ws.manager.mapper.user.UserMapper;
 import com.google.common.collect.Lists;
-import org.apache.commons.collections.ListUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +12,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import static org.junit.Assert.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -29,17 +27,18 @@ public class IUserServiceImplTest {
 
     @Autowired
     private UserMapper userMapper;
+
     @Test
     public void insertUser() {
-        List<String>  strings= Lists.newArrayList();
-        Example example=new Example(User.class);
-        Example.Criteria criteria=example.createCriteria();
-      //  criteria.andEqualTo("name","");
+        List<String> strings = Lists.newArrayList();
+        Example example = new Example(User.class);
+        Example.Criteria criteria = example.createCriteria();
+        //  criteria.andEqualTo("name","");
         //criteria.andIn("name",strings);
         System.out.println(userMapper.selectAll().size());
 
-        List<User> users=userMapper.selectAll();
-     /*   for (int i = 0; i < 100000; i++) {
+        List<User> users = userMapper.selectAll();
+    /*    for (int i = 0; i < 100000; i++) {
             User user=new User();
             user.setName(String.valueOf(i));
             users.add(user);
@@ -48,25 +47,41 @@ public class IUserServiceImplTest {
         List<List<User>> userlist = Lists.partition(users, 5000);
         System.out.println(userlist.size());
 
-        ExecutorService executorService=Executors.newFixedThreadPool(1);
-        for (int i = 0; i < 1; i++) {
-            int finalI = i;
-            executorService.execute(()->{
+        ExecutorService executorService = Executors.newFixedThreadPool(userlist.size());
+        for (final List<User> userlists : userlist) {
 
-                System.out.println(userlist.get(finalI).size());
-                for (User user:
-                userlist.get(finalI)) {
-                    System.out.println(Thread.currentThread().getName()+"---------"+finalI);
-                    System.out.println(user);
-                    updateUser(user);
+
+            executorService.submit(() -> {
+
+                    System.out.println(Thread.currentThread().getName() + "----" + userlists.size());
+                for (final User user:userlists
+                     ) {
+                    updateUser1(user);
+                    System.out.println(Thread.currentThread().getName() + "----" +user);
                 }
+             //   updateUser(userlists.stream().map(User::getId).collect(Collectors.toList()));
+               // System.out.println(userlists.stream().map(User::getId).collect(Collectors.toList()));
+
 
             });
         }
-       // executorService.shutdown();
+        executorService.shutdown();
 
     }
-    private void updateUser(User user){
+
+    private  void  updateUser1(User user) {
+
+
         userMapper.updateByPrimaryKey(user);
+    }
+
+    private synchronized void  updateUser(List<Long> strings) {
+
+        User user=new User();
+        user.setEmail("------");
+        Example example=new Example(User.class);
+        Example.Criteria criteria=example.createCriteria();
+        criteria.andIn("id",strings);
+        userMapper.updateByExample(user,example);
     }
 }
