@@ -12,11 +12,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
+import java.util.Set;
+import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.concurrent.CountDownLatch;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -38,51 +38,51 @@ public class IUserServiceImplTest {
         System.out.println(userMapper.selectAll().size());
 
         List<User> users = userMapper.selectAll();
-    /*    for (int i = 0; i < 100000; i++) {
-            User user=new User();
-            user.setName(String.valueOf(i));
-            users.add(user);
-            userMapper.insert(user);
-        }*/
-        List<List<User>> userlist = Lists.partition(users, 5000);
-        System.out.println(userlist.size());
+        Long start = System.currentTimeMillis();
 
-        ExecutorService executorService = Executors.newFixedThreadPool(userlist.size());
-        for (final List<User> userlists : userlist) {
+        users.stream().forEach(e -> {
+            updateUser1(e);
+        });
 
+        Long end = System.currentTimeMillis();
 
-            executorService.submit(() -> {
-
-                    System.out.println(Thread.currentThread().getName() + "----" + userlists.size());
-                for (final User user:userlists
-                     ) {
-                    user.setEmail("22222222");
-                    updateUser1(user);
-                    System.out.println(Thread.currentThread().getName() + "----" +user);
-                }
-               updateUser(userlists.stream().map(User::getId).collect(Collectors.toList()));
-               // System.out.println(userlists.stream().map(User::getId).collect(Collectors.toList()));
-
-
-            });
-        }
-        //executorService.shutdown();
-
+        System.out.println("start-end" + (end - start));
     }
 
-    private  void  updateUser1(User user) {
 
+    private void updateUser1(User user) {
 
+        user.setEmail("==============");
         userMapper.updateByPrimaryKey(user);
     }
 
-    private synchronized void  updateUser(List<Long> strings) {
+    private synchronized void updateUser(List<Long> strings) {
 
-        User user=new User();
+        User user = new User();
         user.setEmail("------");
-        Example example=new Example(User.class);
-        Example.Criteria criteria=example.createCriteria();
-        criteria.andIn("id",strings);
-        userMapper.updateByExample(user,example);
+        Example example = new Example(User.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andIn("id", strings);
+        userMapper.updateByExample(user, example);
+    }
+
+
+    public void get() {
+
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 10000; i++) {
+            list.add(i);
+        }
+        Set<Thread> threadSet = new CopyOnWriteArraySet<>();
+        // 并行执行
+        list.parallelStream().forEach(integer -> {
+            Thread thread = Thread.currentThread();
+            // System.out.println(thread);
+            // 统计并行执行list的线程
+            threadSet.add(thread);
+        });
+        System.out.println("threadSet一共有" + threadSet.size() + "个线程");
+        System.out.println("系统一个有" + Runtime.getRuntime().availableProcessors() + "个cpu");
+
     }
 }
