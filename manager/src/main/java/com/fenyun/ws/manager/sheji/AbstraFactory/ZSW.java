@@ -1,6 +1,5 @@
-package com.fenyun.ws.manager.sheji;
+package com.fenyun.ws.manager.sheji.AbstraFactory;
 
-import com.fenyun.ws.manager.sheji.bean.BaseBean;
 
 public class ZSW implements IBoMa{
     @Override

@@ -1,4 +1,4 @@
-package com.fenyun.ws.manager.sheji;
+package com.fenyun.ws.manager.sheji.AbstraFactory;
 
 public class ZSwCase implements ICaseClose {
     @Override

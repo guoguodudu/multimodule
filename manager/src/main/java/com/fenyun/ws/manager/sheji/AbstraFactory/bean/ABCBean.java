@@ -1,4 +1,4 @@
-package com.fenyun.ws.manager.sheji.bean;
+package com.fenyun.ws.manager.sheji.AbstraFactory.bean;
 
 import lombok.Data;
 import lombok.ToString;
