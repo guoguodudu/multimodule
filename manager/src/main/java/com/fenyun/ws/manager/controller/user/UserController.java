@@ -35,7 +35,7 @@ public class UserController extends BaseController {
 
     @RequestMapping(value = "/list2" )
     public RestResponse getSgtring(){
-        return successResponse("123");
+        return successResponse("123456");
     }
 
     @RequestMapping("/add")

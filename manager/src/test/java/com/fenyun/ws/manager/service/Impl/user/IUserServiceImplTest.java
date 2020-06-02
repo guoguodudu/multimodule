@@ -15,8 +15,10 @@ import tk.mybatis.mapper.entity.Example;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArraySet;
-import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -38,9 +40,16 @@ public class IUserServiceImplTest {
         System.out.println(userMapper.selectAll().size());
 
         List<User> users = userMapper.selectAll();
+        List<User> userList = new Vector<>(users);
         Long start = System.currentTimeMillis();
 
-        users.stream().forEach(e -> {
+        ExecutorService executorService = Executors.newFixedThreadPool(4);
+//        users.stream().forEach(e -> {
+//            updateUser1(e);
+//        });
+
+
+        userList.parallelStream().forEach(e -> {
             updateUser1(e);
         });
 
@@ -52,7 +61,7 @@ public class IUserServiceImplTest {
 
     private void updateUser1(User user) {
 
-        user.setEmail("==============");
+        user.setEmail("----------");
         userMapper.updateByPrimaryKey(user);
     }
 
