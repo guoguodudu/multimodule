@@ -19,26 +19,51 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
 @Data
 public class Dome implements Serializable {
 
-    private String k;
-    private String ll;
-    private Integer k1;
-    private Integer k2;
-    private Integer k3;
+    static  Hashtable<String, String> hashtable=new Hashtable();
 
+    static  HashMap<String, String> hashtable2=new HashMap();
 
+    static  List<String> arrayList=new Vector<>();
+    public static void main(String[] args) throws InterruptedException {
+        ExecutorService executorService=Executors.newFixedThreadPool(8);
 
-    public static void main(String[] args) {
-        BigDecimal bigDecimal=BigDecimal.valueOf(-0.1);
-        System.out.println(new BigDecimal(bigDecimal.toString()));
-        System.out.println(bigDecimal.toString().charAt(0) == '-');
-        System.out.println(Integer.parseInt(Integer.valueOf(-1).toString()));;
-        System.out.println(Integer.parseInt("1"));
-       // System.out.println(NumberUtil.equals(BigDecimal.valueOf(11.1), BigDecimal.valueOf(11.1)));
+        executorService.execute(()->{
+            for (int i = 0; i <1000 ; i++) {
+                arrayList.add(String.valueOf(i));
+            }
+        });
+       // executorService.shutdown();
+/*
+        Thread t1=new Thread(()->{
+            for (int i = 0; i <1000 ; i++) {
+                arrayList.add(String.valueOf(i));
+            }
+        });
+
+        Thread t2=new Thread(()->{
+            for (int i = 0; i <1000 ; i++) {
+                arrayList.add(String.valueOf(i));
+            }
+        });
+        Thread t3=new Thread(()->{
+            for (int i = 0; i <1000 ; i++) {
+                arrayList.add(String.valueOf(i));
+            }
+        });
+        t1.start();
+        t2.start();
+        t3.start();
+        t1.join();
+        t2.join();
+        t3.join();*/
+        System.out.println(arrayList.size());
     }
 
     public static Boolean get( String kk){

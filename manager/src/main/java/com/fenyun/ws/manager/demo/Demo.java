@@ -1,326 +1,108 @@
 package com.fenyun.ws.manager.demo;
 
-import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 public class Demo {
 
-
-
-    /**
-     * authenticationSubmitTime : 1546938963000
-     *
-     *
-     * bankCard : “”
-     * company : {"auditFailReason":"","auditorTime":"2019-01-08 17:15:05.0","companyName":"xxx","hasagent":"0","legal":"","legalName":"xxx","organization":"xxx","organizationPath":"xxx","regFormPath":"xxx","relatedTransactionNo":"xxx","status":"4","verifyType":"1"}
-     * manager : {"auditFailReason":"","auditorTime":"","headPhotoPath":"xxx","idCard":"xxx","mobile":"xxx","personName":"xxx","status":"2","type":"1","verifyType":"0"}
-     * passTime : 1546938905000
-     * person : “”
-     * transactionNo : xxx
-     * type : 2
-     */
-
-    private String authenticationSubmitTime;
+    private Integer age;
     private String bankCard;
-    private CompanyBean company;
-    private ManagerBean manager;
     private String passTime;
     private String person;
     private String transactionNo;
     private String type;
 
-    public String getAuthenticationSubmitTime() {
-        return authenticationSubmitTime;
-    }
-
-    public void setAuthenticationSubmitTime(String authenticationSubmitTime) {
-        this.authenticationSubmitTime = authenticationSubmitTime;
-    }
-
-    public String getBankCard() {
-        return bankCard;
-    }
-
-    public void setBankCard(String bankCard) {
-        this.bankCard = bankCard;
-    }
-
-    public CompanyBean getCompany() {
-        return company;
-    }
-
-    public void setCompany(CompanyBean company) {
-        this.company = company;
-    }
-
-    public ManagerBean getManager() {
-        return manager;
-    }
-
-    public void setManager(ManagerBean manager) {
-        this.manager = manager;
-    }
-
-    public String getPassTime() {
-        return passTime;
-    }
-
-    public void setPassTime(String passTime) {
-        this.passTime = passTime;
-    }
-
-    public String getPerson() {
-        return person;
-    }
-
-    public void setPerson(String person) {
-        this.person = person;
-    }
-
-    public String getTransactionNo() {
-        return transactionNo;
-    }
-
-    public void setTransactionNo(String transactionNo) {
-        this.transactionNo = transactionNo;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public static class CompanyBean {
-        /**
-         * auditFailReason :
-         * auditorTime : 2019-01-08 17:15:05.0
-         * companyName : xxx
-         * hasagent : 0
-         * legal :
-         * legalName : xxx
-         * organization : xxx
-         * organizationPath : xxx
-         * regFormPath : xxx
-         * relatedTransactionNo : xxx
-         * status : 4
-         * verifyType : 1
-         */
-
-        private String auditFailReason;
-        private String auditorTime;
-        private String companyName;
-        private String hasagent;
-        private String legal;
-        private String legalName;
-        private String organization;
-        private String organizationPath;
-        private String regFormPath;
-        private String relatedTransactionNo;
-        private String status;
-        private String verifyType;
-
-        public String getAuditFailReason() {
-            return auditFailReason;
+    public static int massage(int[] nums) {
+        if (nums == null || nums.length < 1) {
+            return 0;
         }
-
-        public void setAuditFailReason(String auditFailReason) {
-            this.auditFailReason = auditFailReason;
+        int dp0 = 0, dp1 = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            int tempDp0 = dp0, tempDp1 = dp1;
+            System.out.println("i=" + i + " dp0=" + dp0 + " dp1=" + dp1);
+            dp0 = Math.max(tempDp0, tempDp1);
+            dp1 = tempDp0 + nums[i];
         }
+        return dp0 > dp1 ? dp0 : dp1;
 
-        public String getAuditorTime() {
-            return auditorTime;
-        }
-
-        public void setAuditorTime(String auditorTime) {
-            this.auditorTime = auditorTime;
-        }
-
-        public String getCompanyName() {
-            return companyName;
-        }
-
-        public void setCompanyName(String companyName) {
-            this.companyName = companyName;
-        }
-
-        public String getHasagent() {
-            return hasagent;
-        }
-
-        public void setHasagent(String hasagent) {
-            this.hasagent = hasagent;
-        }
-
-        public String getLegal() {
-            return legal;
-        }
-
-        public void setLegal(String legal) {
-            this.legal = legal;
-        }
-
-        public String getLegalName() {
-            return legalName;
-        }
-
-        public void setLegalName(String legalName) {
-            this.legalName = legalName;
-        }
-
-        public String getOrganization() {
-            return organization;
-        }
-
-        public void setOrganization(String organization) {
-            this.organization = organization;
-        }
-
-        public String getOrganizationPath() {
-            return organizationPath;
-        }
-
-        public void setOrganizationPath(String organizationPath) {
-            this.organizationPath = organizationPath;
-        }
-
-        public String getRegFormPath() {
-            return regFormPath;
-        }
-
-        public void setRegFormPath(String regFormPath) {
-            this.regFormPath = regFormPath;
-        }
-
-        public String getRelatedTransactionNo() {
-            return relatedTransactionNo;
-        }
-
-        public void setRelatedTransactionNo(String relatedTransactionNo) {
-            this.relatedTransactionNo = relatedTransactionNo;
-        }
-
-        public String getStatus() {
-            return status;
-        }
-
-        public void setStatus(String status) {
-            this.status = status;
-        }
-
-        public String getVerifyType() {
-            return verifyType;
-        }
-
-        public void setVerifyType(String verifyType) {
-            this.verifyType = verifyType;
-        }
-    }
-
-    public static class ManagerBean {
-        /**
-         * auditFailReason :
-         * auditorTime :
-         * headPhotoPath : xxx
-         * idCard : xxx
-         * mobile : xxx
-         * personName : xxx
-         * status : 2
-         * type : 1
-         * verifyType : 0
-         */
-
-        private String auditFailReason;
-        private String auditorTime;
-        private String headPhotoPath;
-        private String idCard;
-        private String mobile;
-        private String personName;
-        private String status;
-        private String type;
-        private String verifyType;
-
-        public String getAuditFailReason() {
-            return auditFailReason;
-        }
-
-        public void setAuditFailReason(String auditFailReason) {
-            this.auditFailReason = auditFailReason;
-        }
-
-        public String getAuditorTime() {
-            return auditorTime;
-        }
-
-        public void setAuditorTime(String auditorTime) {
-            this.auditorTime = auditorTime;
-        }
-
-        public String getHeadPhotoPath() {
-            return headPhotoPath;
-        }
-
-        public void setHeadPhotoPath(String headPhotoPath) {
-            this.headPhotoPath = headPhotoPath;
-        }
-
-        public String getIdCard() {
-            return idCard;
-        }
-
-        public void setIdCard(String idCard) {
-            this.idCard = idCard;
-        }
-
-        public String getMobile() {
-            return mobile;
-        }
-
-        public void setMobile(String mobile) {
-            this.mobile = mobile;
-        }
-
-        public String getPersonName() {
-            return personName;
-        }
-
-        public void setPersonName(String personName) {
-            this.personName = personName;
-        }
-
-        public String getStatus() {
-            return status;
-        }
-
-        public void setStatus(String status) {
-            this.status = status;
-        }
-
-        public String getType() {
-            return type;
-        }
-
-        public void setType(String type) {
-            this.type = type;
-        }
-
-        public String getVerifyType() {
-            return verifyType;
-        }
-
-        public void setVerifyType(String verifyType) {
-            this.verifyType = verifyType;
-        }
     }
 
     public static void main(String[] args) {
 
-        String kk= "{\"authenticationSubmitTime\":\"1546938963000\",\"bankCard\":null,\"company\":{\"auditFailReason\":\n\"\",\"auditorTime\":\"2019-01-0817:15:05.0\",\"companyName\":\"xxx\",\"hasagent\":\"0\",\"legal\":\"\",\"legalName\":\"xxx\",\"organization\":\"xxx\",\"organizationPath\":\"xxx\",\"regFormPath\":\"xxx\",\"relatedTransactionNo\":\"xxx\",\"status\":\"4\",\"verifyType\":\"1\"},\"manager\":{\"auditFailReason\":\"\",\"auditorTime\":\"\",\"headPhotoPath\":\"xxx\",\"idCard\":\"xxx\",\"mobile\":\"xxx\",\"personName\":\"xxx\",\"status\":\"2\",\"type\":\"1\",\"verifyType\":\"0\"},\"passTime\":\"1546938905000\",\"person\":null,\"transactionNo\":\"xxx\",\"type\":\"2\"}";
+        String con="-1";
+        System.out.println(con.contains("-"));
 
-        Demo dem = JSONObject.parseObject(kk,Demo.class);
-        System.out.println(dem.getCompany().getAuditorTime());
+    }
+
+    public static int numsadd4(int n) {
+
+        int sum=n;
+        boolean bool=(n!=0) && ((sum+=numsadd4(n-1))!=0);
+        return sum ;
+    }
+
+    public static int[] numsadd(int[] nums) {
+
+        if (nums == null && nums.length <= 1) return null;
+
+        int[] res = new int[nums.length];
+
+        int result = 1;
+        res[0] = 1;
+        for (int i = 1; i < nums.length; i++) {
+            result *= nums[i - 1];
+            res[i] = result;
+        }
+        result = 1;
+        for (int i = nums.length - 2; i >= 0; i--) {
+            result *= nums[i + 1];
+            res[i] *= result;
+
+        }
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println(res[i]);
+        }
+        return res;
+    }
+
+    public static int nums(int[] nums) {
+        Set<Integer> set = new HashSet<>();
+
+        for (int num : nums) {
+            set.add(num);
+        }
+
+        int res = 0;
+
+        for (int num : nums) {
+
+            if (!set.remove(num)) {
+                continue;
+            }
+
+            int count = 1;
+
+            int tmp = num;
+
+            while (set.remove(--num)) {
+                count += 1;
+            }
+
+            while (set.remove(++tmp)) {
+                count += 1;
+            }
+
+            res = Math.max(res, count);
+
+
+            if (res >= set.size()) {
+                break;
+            }
+        }
+
+        return res;
     }
 }

@@ -5,9 +5,11 @@ import com.fenyun.config.base.base.response.RestResponse;
 import com.fenyun.ws.manager.domain.user.User;
 import com.fenyun.ws.manager.request.IRequestLogin;
 import com.fenyun.ws.manager.service.user.IUserService;
+import com.fenyun.ws.manager.thead.Executor.ThreadPoolDynamicTasks;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
+import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,6 +24,9 @@ public class UserController extends BaseController {
     @Autowired
     private IUserService iUserService;
 
+    @Autowired
+    private ThreadPoolDynamicTasks threadPoolDynamicTasks;
+
     @RequestMapping(value = "/test",method =RequestMethod.POST )
     public RestResponse getString(@RequestBody String mobile){
         System.out.println("string"+mobile);
@@ -35,6 +40,11 @@ public class UserController extends BaseController {
 
     @RequestMapping(value = "/list2" )
     public RestResponse getSgtring(){
+
+        for (int i = 0; i < 1000; i++) {
+            threadPoolDynamicTasks.addTask(i);
+        }
+
         return successResponse("123456");
     }
 
