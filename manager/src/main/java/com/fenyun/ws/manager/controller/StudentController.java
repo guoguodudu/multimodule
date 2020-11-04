@@ -1,7 +1,6 @@
 package com.fenyun.ws.manager.controller;
 
-import com.fenyun.config.base.base.response.BaseController;
-import com.fenyun.config.base.base.response.RestResponse;
+import com.fenyun.config.base.base.annotation.BaseResult;
 import com.fenyun.ws.manager.service.IStudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,19 +8,21 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/stu/")
-public class StudentController extends BaseController {
+
+public class StudentController {
 
     @Autowired
     private IStudentService iStudentService;
 
 
     @RequestMapping("add")
-    public RestResponse UserTest(){
-        return insertResponse(iStudentService.insertStudent());
+    @BaseResult
+    public Object UserTest() {
+        return "123";
     }
 
     @RequestMapping("userList")
-    public RestResponse queryUserTest(){
-        return successResponse(iStudentService.queryStudent());
+    public String queryUserTest() {
+        return "123";
     }
 }

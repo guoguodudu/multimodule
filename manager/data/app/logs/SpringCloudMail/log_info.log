@@ -1,24 +1,123 @@
-===2020-05-29 16:27:04.487 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
-===2020-05-29 16:27:12.250 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 14.332 seconds (JVM running for 15.804)
-===2020-05-29 16:27:12.595 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
-===2020-05-29 16:27:12.782 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
-===2020-05-29 16:27:13.837 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
-===2020-05-29 16:27:13.843 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
-===2020-05-29 16:28:02.651 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
-===2020-05-29 16:28:09.763 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 13.787 seconds (JVM running for 14.838)
-===2020-05-29 16:28:10.007 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
-===2020-05-29 16:28:10.206 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
-===2020-05-29 16:28:11.392 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
-===2020-05-29 16:28:11.399 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
-===2020-05-29 16:29:06.827 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
-===2020-05-29 16:29:13.900 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 13.772 seconds (JVM running for 14.833)
-===2020-05-29 16:29:14.133 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
-===2020-05-29 16:29:14.265 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
-===2020-05-29 16:29:15.315 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
-===2020-05-29 16:29:15.322 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
-===2020-05-29 16:34:07.983 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
-===2020-05-29 16:34:15.118 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 13.548 seconds (JVM running for 14.761)
-===2020-05-29 16:34:15.364 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
-===2020-05-29 16:34:15.517 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
-===2020-05-29 16:35:05.678 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
-===2020-05-29 16:35:05.686 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
+===2020-10-12 13:42:14.475 INFO  test.mapper.SysUserMapperTest Line:652 - The following profiles are active: dev
+===2020-10-12 13:42:22.999 INFO  test.mapper.SysUserMapperTest Line:59  - Started SysUserMapperTest in 16.55 seconds (JVM running for 17.841)
+===2020-10-12 13:42:43.644 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 13:42:46.557 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:42:46.567 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 13:42:46.568 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 13:42:46.701 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 13:42:51.589 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:42:51.637 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 16.303 seconds (JVM running for 22.002)
+===2020-10-12 13:43:06.348 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 13:45:58.467 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 13:46:01.740 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:46:01.751 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 13:46:01.752 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 13:46:01.885 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 13:46:06.636 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:46:06.681 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 16.931 seconds (JVM running for 29.749)
+===2020-10-12 13:46:12.633 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 13:47:10.006 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 13:47:13.452 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:47:13.463 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 13:47:13.463 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 13:47:13.572 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 13:47:18.295 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:47:18.338 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 17.126 seconds (JVM running for 31.229)
+===2020-10-12 13:47:23.228 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 13:48:45.041 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 13:48:48.747 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:48:48.766 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 13:48:48.767 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 13:48:48.969 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 13:48:53.864 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:48:53.909 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 17.557 seconds (JVM running for 31.243)
+===2020-10-12 13:49:00.581 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 13:49:38.467 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 13:49:41.976 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:49:41.989 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 13:49:41.989 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 13:49:42.123 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 13:49:47.135 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:49:47.193 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 17.403 seconds (JVM running for 30.338)
+===2020-10-12 13:49:53.262 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 13:53:07.453 INFO  test.mapper.SysUserMapperTest Line:652 - The following profiles are active: dev
+===2020-10-12 13:53:15.608 INFO  test.mapper.SysUserMapperTest Line:59  - Started SysUserMapperTest in 16.147 seconds (JVM running for 17.307)
+===2020-10-12 13:53:43.951 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 13:53:47.271 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:53:47.279 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 13:53:47.279 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 13:53:47.388 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 13:53:52.402 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:53:52.450 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 16.924 seconds (JVM running for 28.454)
+===2020-10-12 13:54:01.303 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 13:55:09.026 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 13:55:12.292 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:55:12.303 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 13:55:12.303 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 13:55:12.437 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 13:55:17.322 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:55:17.379 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 16.987 seconds (JVM running for 29.285)
+===2020-10-12 13:55:22.694 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 13:56:06.872 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 13:56:10.204 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:56:10.213 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 13:56:10.214 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 13:56:10.321 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 13:56:15.369 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:56:15.421 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 17.161 seconds (JVM running for 31.018)
+===2020-10-12 13:56:18.547 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 13:57:11.366 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 13:57:14.697 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:57:14.708 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 13:57:14.709 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 13:57:14.852 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 13:57:19.941 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:57:19.994 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 17.254 seconds (JVM running for 30.735)
+===2020-10-12 13:57:22.832 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 13:59:15.869 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 13:59:19.098 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:59:19.108 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 13:59:19.108 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 13:59:19.229 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 13:59:23.975 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 13:59:24.021 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 16.738 seconds (JVM running for 29.531)
+===2020-10-12 13:59:31.794 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 14:09:40.062 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 14:09:43.395 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 14:09:43.408 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 14:09:43.408 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 14:09:43.527 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 14:09:48.697 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 14:09:48.751 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 17.147 seconds (JVM running for 28.744)
+===2020-10-12 14:09:52.223 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 14:10:54.487 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 14:10:57.729 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 14:10:57.741 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 14:10:57.741 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 14:10:57.850 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 14:11:02.786 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 14:11:02.833 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 16.606 seconds (JVM running for 27.928)
+===2020-10-12 14:11:06.282 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 14:11:40.211 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 14:11:43.706 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 14:11:43.715 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 14:11:43.715 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 14:11:43.832 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 14:11:49.967 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 14:11:50.014 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 18.442 seconds (JVM running for 30.28)
+===2020-10-12 14:14:33.103 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 14:17:44.117 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 14:17:47.359 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 14:17:47.370 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 14:17:47.371 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 14:17:47.494 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 14:17:52.694 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 14:17:52.772 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 16.956 seconds (JVM running for 28.475)
+===2020-10-12 14:17:53.618 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+===2020-10-12 14:18:35.632 INFO  com.fenyun.ws.manager.ManagerApplication Line:652 - The following profiles are active: dev
+===2020-10-12 14:18:39.453 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+===2020-10-12 14:18:39.464 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+===2020-10-12 14:18:39.464 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.24]
+===2020-10-12 14:18:39.716 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+===2020-10-12 14:18:45.346 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+===2020-10-12 14:18:45.395 INFO  com.fenyun.ws.manager.ManagerApplication Line:59  - Started ManagerApplication in 18.545 seconds (JVM running for 32.253)

@@ -15,6 +15,7 @@ public enum EmErrorMsg {
 
     private String name;
 
+    
     private Integer index;
 
     public String getName() {
