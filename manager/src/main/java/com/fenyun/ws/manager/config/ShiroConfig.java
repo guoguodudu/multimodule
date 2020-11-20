@@ -23,6 +23,9 @@ import java.util.Map;
 @Configuration
 public class ShiroConfig {
 
+	public static void main(String[] args) {
+
+	}
 	@Bean
 	public ShiroFilterFactoryBean shiroFilterFactoryBean(SecurityManager securityManager) {
 		ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();

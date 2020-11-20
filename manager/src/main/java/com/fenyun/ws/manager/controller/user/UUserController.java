@@ -11,4 +11,7 @@ public class UUserController {
     @Autowired
     private IUserService iUserService;
 
+    public static void main(String[] args) {
+
+    }
 }
