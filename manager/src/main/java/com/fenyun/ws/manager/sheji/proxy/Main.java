@@ -7,6 +7,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 import java.math.BigDecimal;
 import java.util.Random;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
@@ -23,13 +24,15 @@ public class Main {
         //AbcProxy zhangsan = new AbcProxyIml();
 
         //创建一个与代理对象相关联的InvocationHandler
-        InvocationHandler stuHandler = new AbcProxyHander("abc");
+        InvocationHandler stuHandler = new AbcProxyHander(new AbcProxyIml());
 
         //创建一个代理对象stuProxy来代理zhangsan，代理对象的每个执行方法都会替换执行Invocation中的invoke方法
         AbcProxy stuProxy = (AbcProxy) Proxy.newProxyInstance(AbcProxy.class.getClassLoader(), new Class<?>[]{AbcProxy.class}, stuHandler);
 
+
         //代理执行上交班费的方法
         stuProxy.get();
+        stuProxy.get2();
         Double d=11.2+112.4;
         System.out.println(d*0.15);
 
@@ -42,6 +45,7 @@ public class Main {
         System.out.println(String.valueOf(llr));
         System.out.println(BigDecimal.valueOf(12.55555));
         System.out.println(BigDecimal.valueOf(0.55555));
+
 
     }
 }

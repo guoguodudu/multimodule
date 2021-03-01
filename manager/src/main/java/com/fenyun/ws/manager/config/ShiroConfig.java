@@ -51,6 +51,8 @@ public class ShiroConfig {
 		// 权限控制map.
 		Map<String, String> filterChainDefinitionMap = new LinkedHashMap<String, String>();
 
+		String s=new String();
+
 
 		shiroFilterFactoryBean
 				.setFilterChainDefinitionMap(filterChainDefinitionMap);

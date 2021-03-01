@@ -6,4 +6,10 @@ public class AbcProxyIml2 implements AbcProxy {
 
         System.out.println("13----");
     }
+
+    @Override
+    public void get2() {
+
+        System.out.println("12----");
+    }
 }

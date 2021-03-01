@@ -8,4 +8,11 @@ public class AbcProxyIml implements AbcProxy {
 
         System.out.println("12----");
     }
+
+
+    @Override
+    public void get2() {
+
+        System.out.println("12----");
+    }
 }

@@ -33,6 +33,6 @@ public class RetResultAdvice implements ResponseBodyAdvice<Object> {
         //如果是返回了RetResult类就直接返回不做处理
         //如果返回的数据是string类型的时候做的处理
 
-        return RestResponse.makeErrRsp(o);
+        return null;
     }
 }
