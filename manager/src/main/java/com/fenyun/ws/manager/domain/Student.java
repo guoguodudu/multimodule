@@ -20,6 +20,10 @@ public class Student {
 
     public void setString(@NonNull String kk){
         address=kk;
+
+        if(1!=1){
+
+        }
     }
 
 }
