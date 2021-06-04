@@ -1,10 +1,9 @@
 package com.fenyun.ws.manager.thead;
 
 
-import com.google.common.collect.Lists;
-import com.graphbuilder.struc.Stack;
-
-import java.util.Collections;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 public class TreeTest {
 
@@ -31,11 +30,11 @@ public class TreeTest {
 	public static void main(String[] args) {
 
 //来源的数组
-		Integer[] data = {3,9,20,null,null,15,7};
+		Integer[] data = {3,9,20,1,null,8,21,null};
 		//创建二叉树
 		TreeNode treeNode = createTree(data, 0);
 
-		System.out.println(showTree3(treeNode));
+		System.out.println(list(treeNode));;
 
 
 	}
@@ -51,10 +50,24 @@ public class TreeTest {
 			return Math.max(leftHeight, rightHeight) + 1;
 		}
 	}
+	private static List list(TreeNode treeNode){
+
+		if(treeNode==null) return new ArrayList();
+
+		List<Integer> list=new ArrayList<>();
+		List<Integer> listLeft=list(treeNode.left);
+		List<Integer> listRight=list(treeNode.right);
+
+		list.addAll(listLeft);
+		list.add(treeNode.val);
+		list.addAll(listRight);
+		return list;
+
+	}
 
 	private static void showTree(TreeNode treeNode){
 
-		if(treeNode==null) return;
+		if(treeNode==null) return ;
 
 		showTree(treeNode.left);
 		System.out.println(treeNode.val);
@@ -68,8 +81,8 @@ public class TreeTest {
 				return null;
 			}
 			treeNode = new TreeNode(value);
-			treeNode.left = createTree(array, index+1);
-			treeNode.right = createTree(array, index+2);
+			treeNode.left = createTree(array, 2*index+1);
+			treeNode.right = createTree(array, 2*index+2);
 			return treeNode;
 		}
 		return treeNode;

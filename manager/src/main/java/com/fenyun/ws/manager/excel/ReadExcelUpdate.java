@@ -1,8 +1,13 @@
 package com.fenyun.ws.manager.excel;
 
+import cn.afterturn.easypoi.excel.ExcelImportUtil;
+import com.fenyun.ws.manager.util.ExcelUtils;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
+import org.apache.commons.io.IOUtils;
+import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -19,25 +24,30 @@ public class ReadExcelUpdate {
     *  RC_PD
     * */
 
-    private static final String TABLENAME = "RC_PD";
+    private static final String TABLENAME = "EXPIRE_MANAGE";
 
     //分割符
-    private static final Integer FENGE = 4;
+    private static final Integer FENGE = 2;
 
     //判断字符串大小是否添加双引号
-    private static final Integer FENGESIZE = 6;
+    private static final Integer FENGESIZE = 10;
 
 
     private static final Integer COL = 10;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         ReadExcelUpdate obj = new ReadExcelUpdate();
         // 此处为我创建Excel路径：E:/zhanhj/studysrc/jxl下
-        File file = new File("D:/update.xls");
-        List excelList = obj.readExcel(file);
+        File file = new File("D:/excel/45.xlsx");
+
+        FileInputStream input = new FileInputStream(file);
+        MultipartFile multipartFile =new MockMultipartFile("file", file.getName(), "text/plain", IOUtils.toByteArray(input));
+
+        List excelList= ExcelUtils.importExcel(multipartFile,Object.class);
+
+
+        System.out.println(excelList);
         System.out.println("list中的数据打印出来");
-
-
         for (int i = 1; i < excelList.size(); i++) {
 
             StringBuffer stringBuffer = new StringBuffer();
@@ -48,6 +58,7 @@ public class ReadExcelUpdate {
                 stringBuffer.append(((List) excelList.get(0)).get(j));
                 stringBuffer.append(" = ");
                 //stringBuffer.append(list.get(j));
+                //System.out.println(list.get(j));
                 String string = list.get(j).toString();
                 Pattern pattern = Pattern.compile("^-?\\d+(\\.\\d+)?$");
                 if (!pattern.matcher(string).matches() && !"NULL".equals(string)) {
@@ -91,6 +102,8 @@ public class ReadExcelUpdate {
 
     }
 
+
+
     // 去读Excel的方法readExcel，该方法的入口参数为一个File对象
     public List readExcel(File file) {
         try {
@@ -110,6 +123,7 @@ public class ReadExcelUpdate {
                     // sheet.getColumns()返回该页的总列数
                     for (int j = 0; j < sheet.getColumns(); j++) {
                         String cellinfo = sheet.getCell(j, i).getContents();
+                        //System.out.println(cellinfo);
                         if (cellinfo.isEmpty()) {
                             continue;
                         }
