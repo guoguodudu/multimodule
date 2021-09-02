@@ -36,6 +36,6 @@ public class BaseResultAdvice implements ResponseBodyAdvice<Object> {
         }
         //如果返回的数据是string类型的时候做的处理
 
-        return BaseResponseUtil.resultSuccesss(o);
+        return BaseResponseUtilR.resultSuccesss(o);
     }
 }

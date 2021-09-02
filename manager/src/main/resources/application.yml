@@ -7,3 +7,6 @@ mybatis:
 spring:
   profiles:
     active: dev
+
+name:
+  url: jjjjj

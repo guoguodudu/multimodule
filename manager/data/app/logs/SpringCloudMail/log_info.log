@@ -1,12 +1,59 @@
-===2021-05-19 16:23:06.444 INFO  com.fenyun.ws.manager.Test5 Line:652 - The following profiles are active: dev
-===2021-05-19 16:23:16.935 INFO  com.fenyun.ws.manager.Test5 Line:59  - Started Test5 in 20.059 seconds (JVM running for 21.605)
-===2021-05-19 16:23:58.386 INFO  com.fenyun.ws.manager.Test5 Line:652 - The following profiles are active: dev
-===2021-05-19 16:24:09.247 INFO  com.fenyun.ws.manager.Test5 Line:59  - Started Test5 in 19.309 seconds (JVM running for 20.562)
-===2021-05-19 16:25:35.830 INFO  com.fenyun.ws.manager.Test5 Line:652 - The following profiles are active: dev
-===2021-05-19 16:25:45.153 INFO  com.fenyun.ws.manager.Test5 Line:59  - Started Test5 in 17.657 seconds (JVM running for 18.853)
-===2021-05-19 16:26:19.477 INFO  com.fenyun.ws.manager.Test5 Line:652 - The following profiles are active: dev
-===2021-05-19 16:26:34.797 INFO  com.fenyun.ws.manager.Test5 Line:59  - Started Test5 in 24.905 seconds (JVM running for 26.243)
-===2021-05-19 16:27:29.835 INFO  com.fenyun.ws.manager.Test5 Line:652 - The following profiles are active: dev
-===2021-05-19 16:27:39.201 INFO  com.fenyun.ws.manager.Test5 Line:59  - Started Test5 in 18.094 seconds (JVM running for 19.525)
-===2021-05-19 16:30:36.767 INFO  com.fenyun.ws.manager.Test5 Line:652 - The following profiles are active: dev
-===2021-05-19 16:30:47.191 INFO  com.fenyun.ws.manager.Test5 Line:59  - Started Test5 in 18.829 seconds (JVM running for 20.022)
+===2021-08-25 15:15:43.446 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:15:52.253 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 17.017 seconds (JVM running for 18.316)
+===2021-08-25 15:18:31.725 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:18:40.117 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 16.554 seconds (JVM running for 17.695)
+===2021-08-25 15:23:42.282 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:23:53.130 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 19.579 seconds (JVM running for 21.038)
+===2021-08-25 15:24:25.241 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:24:34.215 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 17.252 seconds (JVM running for 18.561)
+===2021-08-25 15:35:36.125 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:35:44.692 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 16.77 seconds (JVM running for 18.07)
+===2021-08-25 15:36:28.775 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:36:37.416 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 17.034 seconds (JVM running for 18.212)
+===2021-08-25 15:40:03.318 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:40:12.173 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 17.398 seconds (JVM running for 18.707)
+===2021-08-25 15:45:32.118 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:45:41.823 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 17.95 seconds (JVM running for 19.183)
+===2021-08-25 15:46:08.006 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:46:19.783 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 23.009 seconds (JVM running for 24.573)
+===2021-08-25 15:46:40.847 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:46:49.901 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 17.308 seconds (JVM running for 18.579)
+===2021-08-25 15:47:46.632 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:47:55.439 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 16.896 seconds (JVM running for 18.054)
+===2021-08-25 15:48:36.534 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:48:45.053 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 16.649 seconds (JVM running for 17.851)
+===2021-08-25 15:50:56.211 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:51:05.064 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 16.983 seconds (JVM running for 18.161)
+===2021-08-25 15:51:42.384 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 15:51:52.129 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 18.169 seconds (JVM running for 19.315)
+===2021-08-25 15:54:29.826 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:652 - The following profiles are active: dev
+===2021-08-25 15:55:56.783 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:652 - The following profiles are active: dev
+===2021-08-25 15:57:39.270 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:652 - The following profiles are active: dev
+===2021-08-25 15:58:03.466 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:652 - The following profiles are active: dev
+===2021-08-25 15:58:37.900 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:652 - The following profiles are active: dev
+===2021-08-25 15:59:08.756 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:652 - The following profiles are active: dev
+===2021-08-25 15:59:50.449 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:652 - The following profiles are active: dev
+===2021-08-25 16:00:04.747 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:652 - The following profiles are active: dev
+===2021-08-25 16:00:16.036 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:59  - Started IUserServiceImplTest3 in 20.456 seconds (JVM running for 21.626)
+===2021-08-25 16:00:44.706 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:652 - The following profiles are active: dev
+===2021-08-25 16:00:53.592 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:59  - Started IUserServiceImplTest3 in 17.307 seconds (JVM running for 18.487)
+===2021-08-25 16:01:43.209 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 16:01:52.144 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 17.102 seconds (JVM running for 18.239)
+===2021-08-25 16:02:19.371 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:652 - The following profiles are active: dev
+===2021-08-25 16:02:28.257 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest3 Line:59  - Started IUserServiceImplTest3 in 17.063 seconds (JVM running for 18.226)
+===2021-08-25 16:03:16.181 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 16:03:25.518 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 18.368 seconds (JVM running for 19.527)
+===2021-08-25 16:03:55.702 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 16:04:05.464 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 18.2 seconds (JVM running for 19.39)
+===2021-08-25 16:05:15.043 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 16:05:23.762 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 16.992 seconds (JVM running for 18.295)
+===2021-08-25 16:28:12.127 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 16:28:20.766 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 16.788 seconds (JVM running for 18.011)
+===2021-08-25 16:29:37.210 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 16:29:45.668 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 16.576 seconds (JVM running for 17.874)
+===2021-08-25 16:30:28.546 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 16:30:37.011 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 16.548 seconds (JVM running for 17.723)
+===2021-08-25 16:43:35.887 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 16:43:44.541 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 17.576 seconds (JVM running for 18.858)
+===2021-08-25 16:43:59.538 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:652 - The following profiles are active: dev
+===2021-08-25 16:44:08.175 INFO  com.fenyun.ws.manager.service.Impl.user.IUserServiceImplTest Line:59  - Started IUserServiceImplTest in 16.811 seconds (JVM running for 17.971)

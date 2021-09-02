@@ -9,6 +9,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Proxy;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.regex.Pattern;
@@ -28,10 +30,8 @@ public class Demo2 {
         }
     }
 
-    public static void main(String[] args) {
-
-        System.out.println(LocalDateTime.parse("2020-04-23", df));
-
-
+    public static void main(String arg){
+        LocalDate localDate= LocalDate.now();
+        System.out.println(localDate);
     }
 }

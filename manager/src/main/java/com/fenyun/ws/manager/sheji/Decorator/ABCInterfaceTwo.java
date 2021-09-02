@@ -1,17 +1,24 @@
 package com.fenyun.ws.manager.sheji.Decorator;
 
-public class ABCInterfaceTwo implements ABCInterface {
+import java.util.ArrayList;
 
-    private ABCInterface abcInterface;
+public class ABCInterfaceTwo  {
 
-    public ABCInterfaceTwo(ABCInterface abcInterface) {
 
-        this.abcInterface=abcInterface;
+    private Integer i=0;
+
+    private Integer integer=8;
+
+
+
+    public void get2(){
+        System.out.println("234");
     }
 
-    @Override
-    public void get() {
-        abcInterface.get();
-        System.out.println("123");
+    public static void main(String[] args) {
+        ABCInterfaceTwo abcInterfaceTwo=new ABCInterfaceTwo();
+        //abcInterfaceTwo.i=9;
+        System.out.println(abcInterfaceTwo.i);
+
     }
 }

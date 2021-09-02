@@ -1,11 +1,11 @@
 package com.fenyun.ws.manager.service.Impl.user;
 
 
-import com.fenyun.common.base.base.response.BaseResponseUtilR;
 import com.fenyun.ws.manager.BaseTest;
 import com.fenyun.ws.manager.domain.user.User;
 import com.fenyun.ws.manager.mapper.StudentMapper;
 import com.fenyun.ws.manager.mapper.user.UserMapper;
+import com.fenyun.ws.manager.shiro.BaseResponseUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,7 +17,7 @@ import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 
-public class IUserServiceImplTest extends BaseTest {
+public class IUserServiceImplTest3 extends BaseTest {
 
     @Autowired
     private StudentMapper studentMapper;
@@ -29,12 +29,12 @@ public class IUserServiceImplTest extends BaseTest {
     private  String url;
 
     @Autowired
-    BaseResponseUtilR baseResponseUtil;
+    BaseResponseUtil baseResponseUtil;
 
     @Test
     public void insertUser() {
-        System.out.println(baseResponseUtil.getUrl());
-      //  BaseResponseUtil BaseResponseUtil=new BaseResponseUtil();
+
+        System.out.println( baseResponseUtil.getUrl());
         System.out.println(url);
     }
 

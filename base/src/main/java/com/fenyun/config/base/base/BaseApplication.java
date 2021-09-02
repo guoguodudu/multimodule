@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author mapper
  */
+/*
 @SpringBootApplication
 public class BaseApplication {
 
@@ -14,3 +15,4 @@ public class BaseApplication {
     }
 
 }
+*/
